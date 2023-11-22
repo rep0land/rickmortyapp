@@ -1,7 +1,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import './App.css'
-import UseFetch from './hooks/UseFetch'
+import UseFetch from './hooks/useFetch'
 import InfoLocation from './components/InfoLocation'
 import CardResidents from './components/CardResidents'
 
