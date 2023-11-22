@@ -1,7 +1,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import './App.css'
-import UseFetch from './hooks/useFetch'
+import useFetch from './hooks/useFetch'
 import InfoLocation from './components/InfoLocation'
 import CardResidents from './components/CardResidents'
 
@@ -10,7 +10,7 @@ function App() {
   const [locationId, setLocationId] = useState(Math.floor(Math.random() * 126) + 1)
 
   const url = `https://rickandmortyapi.com/api/location/${locationId}`
-  const [location, getLocation, isLoading, hasError] = UseFetch(url)
+  const [location, getLocation, isLoading, hasError] = useFetch(url)
 
   useEffect(() => {
     getLocation()
